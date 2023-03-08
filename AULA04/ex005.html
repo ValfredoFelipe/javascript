@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola mundo</h1>
+    <p>Paragrafo de teste 1</p>
+    <p>aprenda a usar <strong>DOM</strong>em Javascript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerText)//innerhtml puxa as configurações html do p1
+        var corpo = window.document.body
+        corpo.style.backgroundColor = 'lightgray'
+        document.write(p1.innerHTML)
+        window.alert(p1.innerHTML)
+
+        //var d = window.document.getElementById('msg')
+        //d.innerText ='OLA'
+        var d =window.document.querySelector('div#msg')
+        d.style.backgroundColor = 'Blue'
+
+            </script>
+    
+</body>
+</html>
