@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>IDENTIFICAÇÃO DE NACIONALIDADE</h1>
+    País de nascimento <input type="text" name="orig" id="orig">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    
+</body>
+<script>
+    function verificar(){
+
+        var orig = window.document.getElementById('orig')
+        var res  = window.document.getElementById('res')
+        var origs = (orig.value)
+        
+
+        if(origs=="Brasil") {
+        res.innerHTML = 'você é <strong> Brasileiro</strong>.'
+        } else {
+        res.innerHTML = 'você não é <strong> Brasileiro</strong>.'
+        }
+   
+
+      
+    }
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>
