@@ -1,9 +1,9 @@
-var numeroo = 9
+var numeroo = 2
 var numfix = 1
 
 var mult = numeroo*numfix
 while(numfix<=10){
 mult = numeroo*numfix
-console.log(`${numeroo} x ${numfix}= ${ mult}`)
+console.log(mult)
 numfix = numfix +1
 }
