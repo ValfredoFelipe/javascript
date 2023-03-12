@@ -11,6 +11,7 @@ function verificar(){
     
     } else{
         res.innerHTML = ''
+       
         while(numfix<=10){
             var item = document.createElement('option')
             item.text = `${numeroo} x ${numfix} = ${mult}`
